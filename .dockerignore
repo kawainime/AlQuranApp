@@ -1,0 +1,8 @@
+.git
+.github
+README.md
+LICENSE
+apps/jadwal-sholat/cypress
+apps/jadwal-sholat/cypress.config.ts
+.husky
+.vscode

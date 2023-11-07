@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "commit": "cz",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier . --write",
+    "lint": "turbo run lint",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@turbo/gen": "^1.10.16",
+    "@unocss/postcss": "^0.56.5",
+    "@unocss/preset-wind": "^0.56.5",
+    "@unocss/reset": "^0.57.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "eslint-config-custom": "workspace:*",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.16",
+    "unocss": "^0.56.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && yarn cz --hook || true"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --config ./prettier.config.js --write"
+    ],
+    "**/*.{css,scss,md,html,json}": [
+      "prettier --config ./prettier.config.js --write"
+    ]
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "jadwal-sholat"
+}

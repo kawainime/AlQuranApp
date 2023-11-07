@@ -1,0 +1,52 @@
+{
+  "name": "jadwal-sholat",
+  "author": "Haikel Ilham Hakim",
+  "description": "🕌 Website Jadwal sholat, Asma'ul Husna, dan baca Al-Qur'an",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://info-jadwal-sholat.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haikelz/jadwal-sholat/"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "open": "cypress open",
+    "test": "cypress run"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.7",
+    "@apollo/experimental-nextjs-app-support": "^0.5.1",
+    "@ducanh2912/next-pwa": "^9.7.2",
+    "@t3-oss/env-nextjs": "^0.7.1",
+    "@tanstack/react-query": "^5.7.2",
+    "axios": "^1.6.0",
+    "classix": "^2.1.35",
+    "date-fns": "^2.30.0",
+    "lucide-react": "^0.292.0",
+    "nanoid": "^5.0.3",
+    "next": "14.0.1",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-secure-storage": "^1.3.0",
+    "react-string-replace": "^1.1.1",
+    "react-use-audio-player": "^2.2.0",
+    "use-deep-compare": "^1.1.0",
+    "zod": "^3.22.4",
+    "zustand": "^4.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.35",
+    "@types/react-dom": "18.2.14",
+    "cypress": "^13.4.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "5.2.2"
+  }
+}
